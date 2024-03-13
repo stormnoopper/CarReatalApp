@@ -10,8 +10,8 @@ export default function Banner (){
             priority
             objectFit='cover'/>
             <div className={style.bannerText}>
-                <h1>Your Travel Partner</h1>
-                <h3>Explore Your World with Us</h3>
+                <h1 className='text-4xl font-medium'>Your Travel Partner</h1>
+                <h3 className='text-xl font-serif'>Explore Your World with Us</h3>
             </div>
         </div>
     )
