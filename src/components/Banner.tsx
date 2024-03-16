@@ -1,10 +1,15 @@
+'use client'
+import { useState } from 'react'
 import style from './banner.module.css'
 import Image from 'next/image'
 
 export default function Banner (){
+    const covers = ['/img/cover.jpg','/img/cover2.jpg','/img/cover3.jpg']
+    const [index, setIndex] = useState(0);
+
     return(
-        <div className={style.banner}>
-            <Image src={'/img/cover.jpg'}
+        <div className={style.banner} onClick={()=>{setIndex(index+1)}}>
+            <Image src={covers[index%3]}
             alt='cover'
             fill={true}
             priority
