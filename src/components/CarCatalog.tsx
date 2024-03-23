@@ -7,7 +7,7 @@ export default async function CarCatalog({carJson}:{carJson:Object}){
     
     return(
         <>
-            Explors {carJsonReady.count} model in our catalog
+            Explore {carJsonReady.count} model in our catalog
             <div style={{margin:"20px",display:"flex", flexDirection:"row",flexWrap:"wrap", justifyContent:"space-around", alignContent:"space-around"}}>
                 {
                     carJsonReady.data.map((carItem:Object)=>(
